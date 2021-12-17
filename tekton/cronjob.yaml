@@ -16,8 +16,8 @@ spec:
         spec:
           containers:
           - name: main
-            image: gcr.io/tekton-releases/dogfooding/tkn:latest
-            command: ["/usr/local/bin/tkn"]
+            image: registry.redhat.io/openshift-pipelines/pipelines-cli-tkn-rhel8:v1.6.1
+            command: ["/usr/bin/tkn"]
             args:
             - pipeline
             - start
